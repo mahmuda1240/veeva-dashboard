@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" id="style" />
+
+    <!--- Icons css --->
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <!--- fontawesome css --->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!--- Style css --->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/plugins.css" />
+    <!--- Animations css --->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+
+    <link rel="stylesheet" href="assets/css/p-scroll.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="global-loader">
+      <img
+        src="assets/img/loaders/loader-4.svg"
+        class="loader-img"
+        alt="Loader"
+      />
+    </div>
+    <!-- /Loader -->
+
+    <!-- page -->
+    <div class="page custom-index">
+      <!-- main-content -->
+      <div class="main-content app-content m-0">
+        <!-- container -->
+        <div class="main-container container-fluid">
+          <!-- breadcrumb -->
+          <div class="breadcrumb-header justify-content-between gap-4 gap-lg-0">
+            <div class="">
+              <!-- Large button groups (default and split) -->
+              
+              <select id="event-dropdown" class="fs-4" title="click here to see other events status">
+                <option value="">Select An Event</option>
+              </select> 
+              <button class="btn bg-white mb-3 text-gray font-weight-semibold" onclick="getOption()">Submitt</button>
+              
+              <!-- <h4 class="content-title mb-2 fs-20">Name of the Webinar</h4> -->
+              <!-- <p class="font-weight-semibold fs-15 ps-1" style="color: white">
+                Le role des differents outils d'evaluation de la
+                polyneuropa-thie demyelinisante inflammatoire chronique (PIDC)
+              </p> -->
+            </div>
+            <!-- <div class="d-flex my-auto">
+              <div class="d-flex right-page">
+                <div class="d-flex justify-content-center me-5">
+                  <div class="">
+                    <span class="d-block">
+                      <span class="label">Invitations</span>
+                    </span>
+                    <span class="value"> 1200 </span>
+                  </div>
+                  <div class="ms-3 mt-2">
+                    <span class="sparkline_bar"></span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="">
+                    <span class="d-block">
+                      <span class="label">Registrations</span>
+                    </span>
+                    <span class="value"> 800 </span>
+                  </div>
+                  <div class="ms-3 mt-2">
+                    <span class="sparkline_bar31"></span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <!-- /breadcrumb -->
+
+          <!-- Tabs -->
+          <div class="wrapper">
+            <div class="tabs">
+              <ul class="ps-0">
+                <li class="active">
+                  <a href="index.html">Eventrix</a>
+                </li>
+                <li>
+                  <a href="broadcasting.html">Broadcasting</a>
+                </li>
+                <li>
+                  <a href="hcpPortal.html">HCP Portal</a>
+                </li>
+                <li>
+                  <a href="hcpDiscovery.html">HCP Discovery</a>
+                </li>
+                <li>
+                  <a href="campaignPlanner.html">Campaign Planner</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row row-sm">
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="height: 223.2px">
+                  <div class="card-body iconfont text-start">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mb-3">Real time users</h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <div class="d-flex">
+                      <div class="">
+                        <h4 class="mb-1 font-weight-bold">
+                          <span id="total_registrations_in_target_area">---</span>
+                          <span class="text-success tx-13 ms-2"
+                            >(Total:
+                            <span
+                              id="total_HCP_registrations_in_target_area"
+                            >---</span
+                            >)</span
+                          >
+                        </h4>
+                        <p class="mb-2 tx-12 text-muted">
+                          Registrations in your target area
+                        </p>
+                      </div>
+                      <div
+                        class="card-chart bg-primary-transparent brround ms-auto mt-0"
+                      >
+                        <i
+                          class="typcn typcn-group-outline text-primary tx-24"
+                        ></i>
+                      </div>
+                    </div>
+
+                    <div class="progress progress-sm mt-2">
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="70"
+                        class="progress-bar bg-primary wd-70p"
+                        role="progressbar"
+                      ></div>
+                    </div>
+                    <small class="mb-0 text-muted"
+                      >Acheived business goals
+                      <span
+                        id="acheived_business_goals"
+                        class="float-end text-muted"
+                      >70%</span>
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="height: 223.2px">
+                  <div class="card-body iconfont text-start">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mb-3">Attendee Completion rate</h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <div class="d-flex mb-0">
+                      <div class="">
+                        <h4 class="mb-1 font-weight-bold">
+                          56<span class="text-danger tx-13 ms-2"
+                            >(Total: 320)</span
+                          >
+                        </h4>
+                        <p class="mb-2 tx-12 text-muted">
+                          Attendee in your target area
+                        </p>
+                      </div>
+                      <div
+                        class="card-chart bg-pink-transparent brround ms-auto mt-0"
+                      >
+                        <i
+                          class="typcn typcn-chart-line-outline text-pink tx-24"
+                        ></i>
+                      </div>
+                    </div>
+
+                    <div class="progress progress-sm mt-2">
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="70"
+                        class="progress-bar bg-pink wd-50p"
+                        role="progressbar"
+                      ></div>
+                    </div>
+                    <small class="mb-0 text-muted"
+                      >Achieved business goals<span class="float-end text-muted"
+                        >50%</span
+                      ></small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-12 col-md-12">
+                <div class="card">
+                  <div class="card-header bg-transparent pd-b-0 pd-t-20 bd-b-0">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mg-b-10">Conversions</h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <!-- <p class="tx-12 tx-gray-500 mb-0">session by country mean that the user is from the stated country . <a href="">Learn more</a></p> -->
+                  </div>
+                  <div class="card-body" style="margin-top: -10px">
+                    <ul class="sales-session mb-0">
+                      <li>
+                        <div class="d-flex justify-content-between">
+                          <h6>Product page visits</h6>
+                          <p class="font-weight-semibold mb-2">
+                            25
+                            <span class="text-muted font-weight-normal"
+                              >(60%)</span
+                            >
+                          </p>
+                        </div>
+                        <div class="progress ht-5">
+                          <div
+                            aria-valuemax="100"
+                            aria-valuemin="0"
+                            aria-valuenow="60"
+                            class="progress-bar wd-60p bg-primary"
+                            role="progressbar"
+                          ></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between">
+                          <h6>Clinical studies PDF download</h6>
+                          <p class="font-weight-semibold mb-2">
+                            12
+                            <span class="text-muted font-weight-normal"
+                              >(40%)</span
+                            >
+                          </p>
+                        </div>
+                        <div class="progress ht-5">
+                          <div
+                            aria-valuemax="100"
+                            aria-valuemin="0"
+                            aria-valuenow="40"
+                            class="progress-bar wd-40p bg-info"
+                            role="progressbar"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="mb-0 pb-1">
+                        <div class="d-flex justify-content-between">
+                          <h6>Product sample orders</h6>
+                          <p class="font-weight-semibold mb-2">
+                            3
+                            <span class="text-muted font-weight-normal"
+                              >(20%)</span
+                            >
+                          </p>
+                        </div>
+                        <div class="progress ht-5">
+                          <div
+                            aria-valuemax="100"
+                            aria-valuemin="0"
+                            aria-valuenow="20"
+                            class="progress-bar wd-20p bg-danger"
+                            role="progressbar"
+                          ></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-sm">
+              <div class="col-md-12 col-lg-12 col-xl-4">
+                <div class="card">
+                  <div class="card-header bg-transparent pd-b-0 pd-t-20 bd-b-0">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mg-b-10">
+                        Overall registration performance
+                      </h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <!-- <p class="tx-12 tx-gray-500 mb-0">session by country mean that the user is from the stated country . <a href="">Learn more</a></p> -->
+                  </div>
+                  <div class="card-body">
+                    <ul class="sales-session mb-0" id="overall-registration-performence" style="height: 197.6px;">
+                      <!-- <li>
+                        <div class="d-flex justify-content-between">
+                          <h6>North</h6>
+                          <p class="font-weight-semibold mb-2">
+                            <span id="total_registrations_north">200</span>
+                            <span class="text-muted font-weight-normal"
+                              >(<span id="total_registrations_north_occupancy"
+                                >50%</span
+                              >)</span
+                            >
+                          </p>
+                        </div>
+                        <div class="progress ht-5">
+                          <div
+                            aria-valuemax="100"
+                            aria-valuemin="0"
+                            aria-valuenow="60"
+                            class="progress-bar wd-60p bg-primary"
+                            role="progressbar"
+                          ></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between">
+                          <h6>West</h6>
+                          <p class="font-weight-semibold mb-2">
+                            <span id="total_registrations_west">120</span>
+                            <span class="text-muted font-weight-normal"
+                              >(<span id="total_registrations_west_occupancy"
+                                >50%</span
+                              >)</span
+                            >
+                          </p>
+                        </div>
+                        <div class="progress ht-5">
+                          <div
+                            aria-valuemax="100"
+                            aria-valuemin="0"
+                            aria-valuenow="40"
+                            class="progress-bar wd-50p bg-info"
+                            role="progressbar"
+                          ></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between">
+                          <h6>South</h6>
+                          <p class="font-weight-semibold mb-2">
+                            <span id="total_registrations_south">230</span>
+                            <span class="text-muted font-weight-normal"
+                              >(<span id="total_registrations_south_occupancy"
+                                >60%</span
+                              >)</span
+                            >
+                          </p>
+                        </div>
+                        <div class="progress ht-5">
+                          <div
+                            aria-valuemax="100"
+                            aria-valuemin="0"
+                            aria-valuenow="40"
+                            class="progress-bar wd-30p bg-info"
+                            role="progressbar"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="mb-0 pb-1">
+                        <div class="d-flex justify-content-between">
+                          <h6>East</h6>
+                          <p class="font-weight-semibold mb-2">
+                            <span id="total_registrations_east">230</span>
+                            <span class="text-muted font-weight-normal"
+                              >(<span id="total_registrations_east_occupancy"
+                                >60%</span
+                              >)</span
+                            >
+                          </p>
+                        </div>
+                        <div class="progress ht-5">
+                          <div
+                            aria-valuemax="100"
+                            aria-valuemin="0"
+                            aria-valuenow="20"
+                            class="progress-bar wd-20p bg-danger"
+                            role="progressbar"
+                          ></div>
+                        </div>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-xl-4">
+                <div class="card overflow-hidden" style="height: 286.36px">
+                  <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mg-b-10 mt-2">Webinar Attendees</h4>
+                      <i class="mdi mdi-dots-horizontal text-gray"></i>
+                    </div>
+                    <!-- <p class="tx-12 text-muted mb-0"> In the Project Workload report, their remaining assignments, completion dates, whether their work is at-risk. <a href="">Learn more</a></p> -->
+                  </div>
+                  <div class="card-body" style="margin-top: -15px">
+                    <div class="w-100">
+                      <div class="row">
+                        <div
+                          id="chartContainer"
+                          class="ht-250 w-100 bg-transparent"
+                          style="margin-top: -19px"
+                        ></div>
+                      </div>
+                      <!-- <div class="w-50 d-flex flex-column justify-content-center" style="z-index: 100;">
+									<div class="pt-3">
+										<div class="row ">
+											<div class="col-sm-8 ">
+												<h5 class="mb-0 tx-15 d-flex"><span class="legend bg-primary-gradient brround"></span>167</h5>
+												<p class="text-muted  tx-13 mb-0">Live</p>
+											</div>
+										</div>
+									</div>
+									<div class="pt-3">
+										<div class="row ">
+											<div class="col-sm-8 ">
+												<h6 class="mb-0 tx-15 d-flex"><span class="legend bg-danger-gradient brround"></span>56</h6>
+												<p class="text-muted tx-13 mb-0 ">On demand</p>
+											</div>
+										</div>
+									</div>
+									<div class="pt-3">
+										<div class="row ">
+											<div class="col-sm-8 ">
+												<h6 class="mb-0 tx-15 d-flex"><span class="legend bg-success-gradient brround"></span>230</h6>
+												<p class="text-muted tx-13 mb-0">Not participated</p>
+											</div>
+										</div>
+									</div>
+								</div> -->
+                      <!-- <div class="w-100">
+									<div class="row justify-content-md-center">
+										<div class="col-sm-12 d-flex justify-content-center align-items-center">
+											<div id="chartContainer" class="h-100" style="width: 100%; margin-top:-240px;"></div>
+											<div class="">
+												<canvas id="chartDonut" class="ht-175 drop-shadow"></canvas>
+											</div>
+										</div>
+									</div> 
+									
+								</div>									 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-xl-4">
+                <div class="card overflow-hidden" style="height: 286.36px">
+                  <div class="card-header pb-0 pt-4">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mg-b-10">Conversion activity</h4>
+                      <i class="mdi mdi-dots-horizontal text-gray"></i>
+                    </div>
+                    <p class="tx-12 text-muted mb-0">
+                      Last users actions related to the webinar. Follow users
+                      actions live.
+                    </p>
+                  </div>
+                  <div class="card-body pt-3 pt-lg-0 p-0" title="Scroll Down">
+                    <div class="activity Activity-scroll">
+                      <div class="activity-list">
+                        <img
+                          src="assets/img/faces/6.jpg"
+                          alt=""
+                          class="img-activity"
+                        />
+                        <div class="time-activity">
+                          <div class="item-activity">
+                            <p class="mb-0">
+                              <span class="h6 me-1">Dr. Brad Pitt</span
+                              ><span class="text-muted tx-13"> visited</span>
+                              <span class="h6 ms-1 added-project">
+                                Pproduct page</span
+                              >
+                            </p>
+                            <small class="text-muted">30 mins ago</small>
+                          </div>
+                        </div>
+                        <img
+                          src="assets/img/faces/9.jpg"
+                          alt=""
+                          class="img-activity"
+                        />
+                        <div class="time-activity">
+                          <div class="item-activity">
+                            <p class="mb-0">
+                              <span class="h6 me-1"
+                                >Prof. Dr. Mike Thomson</span
+                              >
+                              <span class="text-muted tx-13"> downloaded</span>
+                              <span class="h6 ms-1 added-project text-danger"
+                                >PDF</span
+                              >
+                            </p>
+                            <small class="text-muted">1 days ago</small>
+                          </div>
+                        </div>
+                        <img
+                          src="assets/img/faces/3.jpg"
+                          alt=""
+                          class="img-activity"
+                        />
+                        <div class="time-activity">
+                          <div class="item-activity">
+                            <p class="mb-0">
+                              <span class="h6 me-1">Dr. John Payne</span>
+                              <span class="text-muted tx-13"> ordered a</span>
+                              <span class="h6 ms-1 added-project text-success"
+                                >product sample</span
+                              >
+                            </p>
+                            <small class="text-muted">3 days ago</small>
+                          </div>
+                        </div>
+                        <img
+                          src="assets/img/faces/4.jpg"
+                          alt=""
+                          class="img-activity"
+                        />
+                        <div class="time-activity">
+                          <div class="item-activity">
+                            <p class="mb-0">
+                              <span class="h6 me-1">Dr. Julia Hardacre</span>
+                              <span class="text-muted tx-13"> downloaded</span>
+                              <span class="h6 ms-1 added-project text-warning"
+                                >PDF</span
+                              >
+                            </p>
+                            <small class="text-muted">5 days ago</small>
+                          </div>
+                        </div>
+                        <img
+                          src="assets/img/faces/5.jpg"
+                          alt=""
+                          class="img-activity"
+                        />
+                        <div class="time-activity">
+                          <div class="item-activity">
+                            <p class="mb-0">
+                              <span class="h6 me-1">Prof. Dr. Adam Berry</span>
+                              <span class="text-muted tx-13"> ordered a</span>
+                              <span class="h6 ms-1 added-project text-pink">
+                                product sample</span
+                              >
+                            </p>
+                            <small class="text-muted">30 mins ago</small>
+                          </div>
+                        </div>
+                        <img
+                          src="assets/img/faces/6.jpg"
+                          alt=""
+                          class="img-activity"
+                        />
+                        <div class="time-activity">
+                          <div class="item-activity">
+                            <p class="mb-0">
+                              <span class="h6 me-1">Dr. Irene Hunter</span>
+                              <span class="text-muted tx-13"> visited</span>
+                              <span class="h6 ms-1 added-project text-purple"
+                                >product page</span
+                              >
+                            </p>
+                            <small class="text-muted">1 days ago</small>
+                          </div>
+                        </div>
+                        <img
+                          src="assets/img/faces/6.jpg"
+                          alt=""
+                          class="img-activity"
+                        />
+                        <div class="time-activity">
+                          <div class="item-activity">
+                            <p class="mb-0">
+                              <span class="h6 me-1">Dr. Brad Pitt</span
+                              ><span class="text-muted tx-13"> visited</span>
+                              <span class="h6 ms-1 added-project">
+                                Pproduct page</span
+                              >
+                            </p>
+                            <small class="text-muted">30 mins ago</small>
+                          </div>
+                        </div>
+                        <img
+                          src="assets/img/faces/9.jpg"
+                          alt=""
+                          class="img-activity"
+                        />
+                        <div class="time-activity">
+                          <div class="item-activity">
+                            <p class="mb-0">
+                              <span class="h6 me-1"
+                                >Prof. Dr. Mike Thomson</span
+                              >
+                              <span class="text-muted tx-13"> downloaded</span>
+                              <span class="h6 ms-1 added-project text-danger"
+                                >PDF</span
+                              >
+                            </p>
+                            <small class="text-muted">1 days ago</small>
+                          </div>
+                        </div>
+                        <img
+                          src="assets/img/faces/3.jpg"
+                          alt=""
+                          class="img-activity"
+                        />
+                        <div class="time-activity">
+                          <div class="item-activity">
+                            <p class="mb-0">
+                              <span class="h6 me-1">Dr. John Payne</span>
+                              <span class="text-muted tx-13"> ordered a</span>
+                              <span class="h6 ms-1 added-project text-success"
+                                >product sample</span
+                              >
+                            </p>
+                            <small class="text-muted">3 days ago</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-sm">
+              <div class="col-md-6 col-xl-4">
+                <div class="card" style="height: 410px">
+                  <div class="card-body pe-0">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mg-b-10">Send new invitations</h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <p class="tx-12 tx-gray-500 mb-3">
+                      Send new invitations to HCP who open their invitation
+                      emails more ofter
+                    </p>
+                    <div class="chips ht-300 pe-3" id="ps-1">
+                      <div class="main-contact-item selected">
+                        <div class="main-img-user online">
+                          <img alt="avatar" src="assets/img/faces/2.jpg" />
+                        </div>
+                        <div class="main-contact-body">
+                          <h6>Dr. Abigail Johnson</h6>
+                          <span class="phone"
+                            >total opens in previous campaigns: 18</span
+                          >
+                        </div>                        
+                        <div class="main-contact-star custom-dropdown">
+                          <a href="javascript:void(0);" class="dropbtn"><i class="fa-solid fa-ellipsis-vertical tx-18"></i></a>    
+                          <div class="custom-dropdown-content">
+                            <a class="dropdown-item text"   href="javascript:void(0);"><i class="fa-solid fa-pen-to-square me-2"></i>Send Invitation</a>
+                            <a class="dropdown-item text"   href="javascript:void(0);"><i class="fa-regular fa-trash-can me-2"></i>Remove from list</a>															
+                          </div>                    
+                        </div>
+                      </div>
+                      <div class="main-contact-item">
+                        <div class="main-img-user">
+                          <img alt="avatar" src="assets/img/faces/3.jpg" />
+                        </div>
+                        <div class="main-contact-body">
+                          <h6>Dr. Archie Cantones</h6>
+                          <span>total opens in previous campaigns: 15</span>
+                        </div>
+                        <div class="main-contact-star custom-dropdown">
+                          <a href="javascript:void(0);" class="dropbtn"><i class="fa-solid fa-ellipsis-vertical tx-18"></i></a>    
+                          <div class="custom-dropdown-content">
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-solid fa-pen-to-square me-2"></i>Send Invitation</a>
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-regular fa-trash-can me-2"></i>Remove from list</a>															
+                          </div>                    
+                        </div>                       
+                      </div>
+                      <div class="main-contact-item">
+                        <div class="main-img-user online">
+                          <img alt="avatar" src="assets/img/faces/5.jpg" />
+                        </div>
+                        <div class="main-contact-body">
+                          <h6>Prof. Dr. Britney Labares</h6>
+                          <span>total opens in previous campaigns: 7</span>
+                        </div>
+                        <div class="main-contact-star custom-dropdown">
+                          <a href="javascript:void(0);" class="dropbtn"><i class="fa-solid fa-ellipsis-vertical tx-18"></i></a>    
+                          <div class="custom-dropdown-content">
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-solid fa-pen-to-square me-2"></i>Send Invitation</a>
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-regular fa-trash-can me-2"></i>Remove from list</a>															
+                          </div>                    
+                        </div>
+                      </div>
+                      <div class="main-contact-item">
+                        <div class="main-avatar bg-danger">B</div>
+                        <div class="main-contact-body">
+                          <h6>Dr. Brateyley Cruz</h6>
+                          <span>total opens in previous campaigns: 7</span>
+                        </div>
+                        <div class="main-contact-star custom-dropdown">
+                          <a href="javascript:void(0);" class="dropbtn"><i class="fa-solid fa-ellipsis-vertical tx-18"></i></a>    
+                          <div class="custom-dropdown-content">
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-solid fa-pen-to-square me-2"></i>Send Invitation</a>
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-regular fa-trash-can me-2"></i>Remove from list</a>															
+                          </div>                    
+                        </div>
+                      </div>
+                      <div class="main-contact-item">
+                        <div class="main-img-user online">
+                          <img alt="avatar" src="assets/img/faces/5.jpg" />
+                        </div>
+                        <div class="main-contact-body">
+                          <h6>Prof. Dr. Britney Labares</h6>
+                          <span>total opens in previous campaigns: 7</span>
+                        </div>
+                        <div class="main-contact-star custom-dropdown">
+                          <a href="javascript:void(0);" class="dropbtn"><i class="fa-solid fa-ellipsis-vertical tx-18"></i></a>    
+                          <div class="custom-dropdown-content">
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-solid fa-pen-to-square me-2"></i>Send Invitation</a>
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-regular fa-trash-can me-2"></i>Remove from list</a>															
+                          </div>                    
+                        </div>
+                      </div>
+                      <div class="main-contact-item">
+                        <div class="main-avatar bg-danger">B</div>
+                        <div class="main-contact-body">
+                          <h6>Dr. Brateyley Cruz</h6>
+                          <span>total opens in previous campaigns: 7</span>
+                        </div>
+                        <div class="main-contact-star custom-dropdown">
+                          <a href="javascript:void(0);" class="dropbtn"><i class="fa-solid fa-ellipsis-vertical tx-18"></i></a>    
+                          <div class="custom-dropdown-content">
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-solid fa-pen-to-square me-2"></i>Send Invitation</a>
+                            <a class="dropdown-item"   href="javascript:void(0);"><i class="fa-regular fa-trash-can me-2"></i>Remove from list</a>															
+                          </div>                    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="card" style="height: 410px">
+                  <div class="card-body pe-0">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mg-b-10">Participation reminder</h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <p class="tx-12 tx-gray-500 mb-3">
+                      Send a participation reminder to registered HCP
+                    </p>
+                    <div class="chips ht-300 pe-3" id="ps-2">
+                      <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                          <span
+                            class="avatar cover-image"
+                            data-bs-image-src="assets/img/faces/2.jpg"
+                          ></span>
+                          Dr. Regina Tigges
+                        </a>
+                        <i
+                          class="fas fa-envelope text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        <p>registered since 38 days</p>
+                      </div>
+                      <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                          <span
+                            class="avatar cover-image"
+                            data-bs-image-src="assets/img/faces/3.jpg"
+                          ></span>
+                          Prof. Dr. Isabel Berger
+                        </a>
+                        <i
+                          class="fas fa-envelope text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        <p>registered since 21 days</p>
+                      </div>
+                      <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                          <span
+                            class="avatar cover-image"
+                            data-bs-image-src="assets/img/faces/3.jpg"
+                          ></span>
+                          Dr. Dirik Boerner
+                        </a>
+                        <i
+                          class="fas fa-envelope text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        <p>registered since 19 days</p>
+                      </div>
+                      <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                          <span
+                            class="avatar cover-image"
+                            data-bs-image-src="assets/img/faces/3.jpg"
+                          ></span>
+                          Dr. Marie Becker
+                        </a>
+                        <i
+                          class="fas fa-envelope text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        <p>registered since 16 days</p>
+                      </div>
+                      <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                          <span
+                            class="avatar cover-image"
+                            data-bs-image-src="assets/img/faces/3.jpg"
+                          ></span>
+                          Dr. Marie Becker
+                        </a>
+                        <i
+                          class="fas fa-envelope text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        <p>registered since 16 days</p>
+                      </div>
+                      <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                          <span
+                            class="avatar cover-image"
+                            data-bs-image-src="assets/img/faces/3.jpg"
+                          ></span>
+                          Prof. Dr. Isabel Berger
+                        </a>
+                        <i
+                          class="fas fa-envelope text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        <p>registered since 21 days</p>
+                      </div>
+                      <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                          <span
+                            class="avatar cover-image"
+                            data-bs-image-src="assets/img/faces/3.jpg"
+                          ></span>
+                          Prof. Dr. Isabel Berger
+                        </a>
+                        <i
+                          class="fas fa-envelope text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        <p>registered since 21 days</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-4">
+                <div class="card" style="height: 410px">
+                  <div class="card-body pe-0">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mg-b-10">Next Best Action</h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <p class="tx-12 tx-gray-500 mb-3">
+                      Next best action suggestion based on the HCP webinar
+                      behavior.
+                    </p>
+                    <div>
+                      <div class="chips ht-300 pe-3" id="ps-3">
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Dr. Tom Watson
+                            </a>
+                            <p>downloaded a PDF 20 days ago</p>
+                          </div>
+                          <button class="action_button">
+                            Offer product samples
+                          </button>
+                        </div>
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Prof. Dr. Peter Clark
+                            </a>
+                            <p>visited product page 10 days ago</p>
+                          </div>
+                          <button class="action_button">
+                            Offer clinical studies PDF
+                          </button>
+                        </div>
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Dr. Mary Preston
+                            </a>
+                            <p>ordered a sample 8 days ago</p>
+                          </div>
+                          <button class="action_button">
+                            Ask for survey participation
+                          </button>
+                        </div>
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Dr. Steve Martin
+                            </a>
+                            <p>no conversion since 6 days</p>
+                          </div>
+                          <button class="action_button">
+                            Send link to product page
+                          </button>
+                        </div>
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Dr. Steve Martin
+                            </a>
+                            <p>no conversion since 6 days</p>
+                          </div>
+                          <button class="action_button">
+                            Send link to product page
+                          </button>
+                        </div>
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Dr. Steve Martin
+                            </a>
+                            <p>no conversion since 6 days</p>
+                          </div>
+                          <button class="action_button">
+                            Send link to product page
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Back-to-top --->
+    <a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
+
+    <!--- JQuery min js --->
+    <script src="js/jquery.min.js"></script>
+
+    <!--- Bootstrap Bundle js --->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--- Ionicons js --->
+    <script src="js/ionicons.js"></script>
+
+    <!--- Sparkline js --->
+    <script src="js/jquery.sparkline.min.js"></script>
+
+    <!--- Perfect-scrollbar js --->
+    <script src="js/perfect-scrollbar.min.js"></script>
+    <script src="js/p-scroll.js"></script>
+
+    <!--- Internal Chart js --->
+    <script src="js/Chart.bundle.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <!--- Flot js --->
+    <script src="js/jquery.flot.js"></script>
+    <script src="js/jquery.flot.pie.js"></script>
+    <script src="js/jquery.flot.resize.js"></script>
+
+    <!--- Internal Chart flot js --->
+    <script src="js/chart.flot.js"></script>
+
+    <!--- sticky js --->
+    <script src="js/sticky.js"></script>
+
+    <!--- Scripts js --->
+    <script src="js/script.js"></script>
+
+    <!--- Index js --->
+    <script src="js/index.js"></script>
+
+    <!--themecolor js-->
+    <script src="js/themecolor.js"></script>
+
+    <script src="q.js"></script>
+    <script src="MyInsightsLibrary.js"></script>
+
+    <!--- Custom js --->
+    <script src="js/custom.js"></script>
+
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/main.js"></script>
+
+    <script>
+      window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          animationEnabled: true,
+          data: [
+            {
+              type: "doughnut",
+              startAngle: 60,
+              //indexLabelPlacement: "inside",
+              indexLabelMaxWidth: 100,
+              indexLabelWrap: true,
+              //innerRadius: 70,
+              indexLabelFontSize: 13,
+              indexLabel: "{label} - {y}",
+              toolTipContent: "<small>{label}: {y} (#percent%)</small> ",
+              dataPoints: [
+                { y: 167, label: "Live" },
+                { y: 56, label: "On Demand" },
+                { y: 230, label: "Not Participated" },
+              ],
+            },
+          ],
+        });
+        chart.render();
+      };
+      const ps1 = new PerfectScrollbar("#ps-1", {
+        suppressScrollX: true,
+      });
+      const ps2 = new PerfectScrollbar("#ps-2", {
+        suppressScrollX: true,
+      });
+      const ps33 = new PerfectScrollbar("#ps-3", {
+        suppressScrollX: true,
+      });
+    </script>
+  </body>
+</html>

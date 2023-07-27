@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap css -->
+    <link
+      href="assets/css/bootstrap.css"
+      rel="stylesheet"
+      id="style"
+    />
+
+    <!--- Icons css --->
+    <link href="assets/css/icons.css" rel="stylesheet" />
+
+    <!--- Style css --->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/plugins.css" rel="stylesheet" />
+
+    <!--- Animations css --->
+    <link href="assets/css/animate.css" rel="stylesheet" />
+
+    <!--- fontawesome css --->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/p-scroll.css">
+
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="global-loader">
+      <img
+        src="assets/img/loaders/loader-4.svg"
+        class="loader-img"
+        alt="Loader"
+      />
+    </div>
+    <!-- /Loader -->
+
+    <!-- page -->
+    <div class="page custom-index">
+      <!-- main-content -->
+      <div class="main-content app-content m-0">
+        <!-- container -->
+        <div class="main-container container-fluid">
+          <!-- breadcrumb -->
+          <div class="breadcrumb-header justify-content-between gap-4 gap-lg-0">
+            <div>
+              <h4 class="content-title mb-2 fs-20">HCP Discovery</h4>
+              <p class="font-weight-semibold fs-15" style="color: white">
+                The below information will support you to understand and analyse your HCPs related to "HCP Portal"
+              </p>
+            </div>
+            <div class="d-flex my-auto">
+              <div class="d-flex right-page">
+                <div class="d-flex justify-content-center me-5">
+                  <div class="">
+                    <span class="d-block">
+                      <span class="label">Invitations</span>
+                    </span>
+                    <span class="value"> 1200 </span>
+                  </div>
+                  <div class="ms-3 mt-2">
+                    <span class="sparkline_bar"></span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="">
+                    <span class="d-block">
+                      <span class="label">Registrations</span>
+                    </span>
+                    <span class="value"> 800 </span>
+                  </div>
+                  <div class="ms-3 mt-2">
+                    <span class="sparkline_bar31"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /breadcrumb -->
+
+		  <!-- Tabs -->
+          <div class="wrapper">
+            <div class="tabs">
+              <ul class="ps-0">
+                <li>
+                  <a href="index.html">Eventrix</a>
+                </li>
+                <li>
+                  <a href="broadcasting.html">Broadcasting</a>
+                </li>
+                <li>
+                    <a href="hcpPortal.html">HCP Portal</a>
+                </li>
+                <li class="active">
+                    <a href="hcpDiscovery.html">HCP Discovery</a>
+                </li>
+                <li>
+                  <a href="campaignPlanner.html">Campaign Planner</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="content">
+            <div class="row row-sm">
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="d-flex justify-content-between ps-3 pt-3 pe-3 pb-0">
+                        <h4 class="card-title">Trend Analytics</h4>
+                        <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <p class="tx-12 tx-gray-500 mb-2 ps-3 pb-1 pe-3">Overall GDS Datapopulation grouped by profile trend.</p>
+                    <div class="card-body pt-0">
+                        <table class="table card-table country-table mb-0 my-3 border">
+                            <tbody>
+                                <tr>
+                                    <td class="w-1"><i class="fa-solid fa-circle-user flag wd-30 ht-20 flag-us mt-1 text-primary "></i></td>
+                                    <td>Traditional
+                                        <div class="progress progress-sm mt-2">
+                                            <div class="progress-bar bg-primary wd-30p"></div>
+                                        </div>
+                                    </td>
+                                    <td class="w-1 text-end"><span class="text-muted">30%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="w-1"><i class="fa-solid fa-circle-user flag wd-30 ht-20 flag-us mt-1 text-danger"></i></td>
+                                    <td>Digital Savvy
+                                        <div class="progress progress-sm mt-2">
+                                            <div class="progress-bar bg-pink wd-20p"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-end"><span class="text-muted">25%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="w-1"><i class="fa-solid fa-circle-user flag wd-30 ht-20 flag-us mt-1 text-success"></i></td>
+                                    <td>Social Active
+                                        <div class="progress progress-sm mt-2">
+                                            <div class="progress-bar bg-success wd-40p"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-end"><span class="text-muted">40%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="w-1"><i class="fa-solid fa-circle-user flag wd-30 ht-20 flag-us mt-1 text-warning"></i></td>
+                                    <td>Difficult to reach
+                                        <div class="progress progress-sm mt-2">
+                                            <div class="progress-bar bg-warning wd-15p"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-end"><span class="text-muted">15%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="height: 334.25px">
+                    <div class="card-body pe-0">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="card-title mg-b-10">Follow-up</h4>
+                            <i class="mdi mdi-dots-Vertical"></i>
+                        </div>
+                        <p class="tx-12 tx-gray-500 mb-3">
+                            List of HCPs with whom to engage based on HCP Discovery Channel who are treditional.
+                        </p>
+                        <div>
+                            <div class="chips ht-230 pe-3"  id="ps-12">
+                                <div class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0">
+                                    <div>
+                                        <a href="javascript:void(0)" class="chip">
+                                        <span
+                                            class="avatar cover-image"
+                                            data-bs-image-src="assets/img/faces/2.jpg"
+                                        ></span>
+                                        Dr. Victoria Scott
+                                        </a>
+                                        <p>Traditional</p>
+                                    </div>
+                                    <button class="action_button">
+                                        Setup a call
+                                    </button>
+                                </div>
+                                <div class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0">
+                                    <div>
+                                        <a href="javascript:void(0)" class="chip">
+                                        <span
+                                            class="avatar cover-image"
+                                            data-bs-image-src="assets/img/faces/2.jpg"
+                                        ></span>
+                                        Prof Malcolm Best
+                                        </a>
+                                        <p>Traditional</p>
+                                    </div>
+                                    <button class="action_button">
+                                        Setup a call
+                                    </button>
+                                </div>
+                                <div class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0">
+                                    <div>
+                                        <a href="javascript:void(0)" class="chip">
+                                        <span
+                                            class="avatar cover-image"
+                                            data-bs-image-src="assets/img/faces/2.jpg"
+                                        ></span>
+                                        Prof Nathan Black
+                                        </a>
+                                        <p>Traditional</p>
+                                    </div>
+                                    <button class="action_button">
+                                        Setup a call
+                                    </button>
+                                </div>
+                                <div class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0">
+                                    <div>
+                                        <a href="javascript:void(0)" class="chip">
+                                        <span
+                                            class="avatar cover-image"
+                                            data-bs-image-src="assets/img/faces/2.jpg"
+                                        ></span>
+                                        Dr. Alice Ries
+                                        </a>
+                                        <p>Traditional</p>
+                                    </div>
+                                    <button class="action_button">
+                                        Setup a call
+                                    </button>
+                                </div>
+                                <div class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0">
+                                    <div>
+                                        <a href="javascript:void(0)" class="chip">
+                                        <span
+                                            class="avatar cover-image"
+                                            data-bs-image-src="assets/img/faces/2.jpg"
+                                        ></span>
+                                        Dr. Victoria Scott
+                                        </a>
+                                        <p>Traditional</p>
+                                    </div>
+                                    <button class="action_button">
+                                        Setup a call
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-12 col-md-12">
+                <div class="card" style="height: 334.25px">
+                    <div class="card-body pe-0">
+                      <div class="d-flex justify-content-between">
+                        <h4 class="card-title mg-b-10">Associated with pharma companies</h4>
+                        <i class="mdi mdi-dots-Vertical"></i>
+                      </div>
+                      <p class="tx-12 tx-gray-500 mb-3">
+                        All HCPs that received payments from Pharma companies (ToV) in my territory.
+                      </p>
+                      <div class="chips ht-250 pe-3" id="ps-13">
+                        <div class="team">
+                          <a href="javascript:void(0)" class="chip">
+                            <span
+                              class="avatar cover-image"
+                              data-bs-image-src="assets/img/faces/2.jpg"
+                            ></span>
+                            Dr. Joanne Scot
+                          </a>
+                          <i
+                            class="fas fa-envelope text-primary"
+                            aria-hidden="true"
+                          ></i>
+                          <p>Companies: Roche, Novartis, Merck & Co</p>
+                        </div>
+                        <div class="team">
+                          <a href="javascript:void(0)" class="chip">
+                            <span
+                              class="avatar cover-image"
+                              data-bs-image-src="assets/img/faces/3.jpg"
+                            ></span>
+                            Dr Cristobal Shart
+                          </a>
+                          <i
+                            class="fas fa-envelope text-primary"
+                            aria-hidden="true"
+                          ></i>
+                          <p>Companies: Roche, AbbVie</p>
+                        </div>
+                        <div class="team">
+                          <a href="javascript:void(0)" class="chip">
+                            <span
+                              class="avatar cover-image"
+                              data-bs-image-src="assets/img/faces/3.jpg"
+                            ></span>
+                            Dr. Cathie Madonna
+                          </a>
+                          <i
+                            class="fas fa-envelope text-primary"
+                            aria-hidden="true"
+                          ></i>
+                          <p>Companies: AbbVie</p>
+                        </div>
+                        <div class="team">
+                          <a href="javascript:void(0)" class="chip">
+                            <span
+                              class="avatar cover-image"
+                              data-bs-image-src="assets/img/faces/3.jpg"
+                            ></span>
+                            Dr. Velma Wellons
+                          </a>
+                          <i
+                            class="fas fa-envelope text-primary"
+                            aria-hidden="true"
+                          ></i>
+                          <p>Companies: Merck & Co.</p>
+                        </div>
+                        <div class="team">
+                            <a href="javascript:void(0)" class="chip">
+                                <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/3.jpg"
+                                ></span>
+                                Dr. Velma Wellons
+                            </a>
+                            <i
+                                class="fas fa-envelope text-primary"
+                                aria-hidden="true"
+                            ></i>
+                            <p>Companies: Merck & Co.</p>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row row-sm">
+              <div class="col-md-12 col-lg-12 col-xl-4">
+                <div class="card ht-450">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="card-title pt-2">New Publications (World-wide)</h4>
+                            <i class="mdi mdi-dots-Vertical"></i>
+                        </div>
+                        <p class="tx-12 tx-gray-500 mb-0">List of new publications.</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="browser-stats ht-350" id="ps-14">
+                            <div class="d-flex align-items-center item  border-bottom gap-4">
+                                <div class="d-flex gap-3">
+                                    <i class="fa-solid fa-book ht-30 wd-30 me-2"></i>                                    
+                                    <div class="">
+                                        <h6 class="">Publication Title 01</h6>
+                                        <span class="sub-text">Lorem ipsum dolor sit amet, conseteur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore ei dolor magna</span>
+                                        <a href="#">Link to publication</a>
+                                    </div>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="">
+                                        <span class="me-4 my-auto">Published</span>
+                                        <span class="text-success fs-15">23 Jan, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center item  border-bottom gap-4">
+                                <div class="d-flex gap-3">
+                                    <i class="fa-solid fa-book ht-30 wd-30 me-2"></i>                                    
+                                    <div class="">
+                                        <h6 class="">Publication Title 02</h6>
+                                        <span class="sub-text">Lorem ipsum dolor sit amet, conseteur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore ei dolor magna</span>
+                                        <a href="#">Link to publication</a>
+                                    </div>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="">
+                                        <span class="me-4 my-auto">Published</span>
+                                        <span class="text-success fs-15">12 Jan, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center item  border-bottom gap-4">
+                                <div class="d-flex gap-3">
+                                    <i class="fa-solid fa-book ht-30 wd-30 me-2"></i>                                    
+                                    <div class="">
+                                        <h6 class="">Publication Title 03</h6>
+                                        <span class="sub-text">Lorem ipsum dolor sit amet, conseteur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore ei dolor magna</span>
+                                        <a href="#">Link to publication</a>
+                                    </div>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="">
+                                        <span class="me-4 my-auto">Published</span>
+                                        <span class="text-success fs-15">05 Jan, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center item  border-bottom gap-4">
+                                <div class="d-flex gap-3">
+                                    <i class="fa-solid fa-book ht-30 wd-30 me-2"></i>                                    
+                                    <div class="">
+                                        <h6 class="">Publication Title 04</h6>
+                                        <span class="sub-text">Lorem ipsum dolor sit amet, conseteur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore ei dolor magna</span>
+                                        <a href="#">Link to publication</a>
+                                    </div>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="">
+                                        <span class="me-4 my-auto">Published</span>
+                                        <span class="text-success fs-15">21 Nov, 2022</span>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="d-flex align-items-center item gap-4">
+                                <div class="d-flex gap-3">
+                                    <i class="fa-solid fa-book ht-30 wd-30 me-2"></i>                                    
+                                    <div class="">
+                                        <h6 class="">Publication Title 05</h6>
+                                        <span class="sub-text">Lorem ipsum dolor sit amet, conseteur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore ei dolor magna</span>
+                                        <a href="#">Link to publication</a>
+                                    </div>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="">
+                                        <span class="me-4 my-auto">Published</span>
+                                        <span class="text-success fs-15">12 Nov, 2022</span>
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-xl-4">
+                <div class="card ht-450">
+                    <div class="card-body pe-0">
+                        <div class="d-flex justify-content-between">
+                        <h4 class="card-title mg-b-10">Discover digital savvy hcps</h4>
+                        <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <p class="tx-12 tx-gray-500 mb-3">Show all Digital Savvy HCPs in my territory.</p>
+                    <div class="chips ht-350 pe-4" id="ps-15">
+                        <div class="team">
+                          <a href="javascript:void(0)" class="chip">
+                            <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                            Dr. Joanne Scot
+                          </a>
+                          <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                          <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+						              <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                          <p>Digital Savy</p>
+                        </div>
+                        <div class="team">
+                            <a href="javascript:void(0)" class="chip">
+                              <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                              Dr. Cristobal Sharp
+                            </a>
+                            <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                            <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+                            <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                            <p>Digital Savy</p>
+                        </div>
+                        <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                            <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                            Prof Cathie Madonna
+                        </a>
+                        <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                        <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+                        <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                        <p>Digital Savy</p>
+                        </div>
+                        <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                            <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                            Dr. Velma Wellons
+                        </a>
+                        <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                        <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+                        <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                        <p>Digital Savy</p>
+                        </div>
+                        <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                            <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                            Dr. Joanne Scot
+                        </a>
+                        <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                        <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+                        <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                        <p>Digital Savy</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-xl-4">
+                <div class="card card-dashboard-events overflow-hidden  ht-450">
+									<div class="card-header pb-0">
+										<div class="d-flex justify-content-between">
+											<h4 class="card-title mg-b-10">Conference & congress guide</h4>
+											<i class="mdi mdi-dots-horizontal text-gray"></i>
+										</div>
+										<p class="tx-12 text-muted mb-3">All conferences and congresses related to disease.</p>
+									</div>
+									<div class="card-body">
+										<div class="list-group ht-350"  id="ps-16">
+											<div class="list-group-item pt-1 border-top-0">
+												<div class="event-indicator bg-primary-gradient"></div><label>20 Nov <span>2023</span></label>
+												<h6>Name of the Conference</h6>
+												<p><strong>10 Jun - 14 Jun 2023</strong> San Francisco</p>
+                        <small><span>Disease:</span> Rheumatoid arthiritis <a href="#">Visit Website</a></small>
+											</div>
+											<div class="list-group-item pt-1">
+												<div class="event-indicator bg-primary-gradient"></div><label>17 JUL <span>2023</span></label>
+												<h6>Name of the Conference</h6>
+												<p><strong>17 Jul - 18 Jul 2023</strong> New York</p>
+                        <small><span>Disease:</span> Ankylosing spondylitis <a href="#">Visit Website</a></small>
+											</div>
+                      <div class="list-group-item pt-1">
+												<div class="event-indicator bg-primary-gradient"></div><label>9 aug <span>2023</span></label>
+												<h6>Name of the Conference</h6>
+												<p><strong>9 Aug - 14 Aug 2023</strong> London</p>
+                        <small><span>Disease:</span> Dermatomyositis/polymyositis <a href="#">Visit Website</a></small>
+											</div>
+                      <div class="list-group-item pt-1">
+												<div class="event-indicator bg-primary-gradient"></div><label>20 sep <span>2023</span></label>
+												<h6>Name of the Conference</h6>
+												<p><strong>20 Sep - 23 Sep 2023</strong> Berlin</p>
+                        <small><span>Disease:</span> Scleroderma/systemic sclerosis <a href="#">Visit Website</a></small>
+											</div>
+											<div class="list-group-item pt-1 border-bottom-0">
+												<div class="event-indicator bg-primary-gradient"></div><label>12 nov <span>2023</span></label>
+												<h6>Name of the Conference</h6>
+												<p><strong>12 Nov - 15 Nov 2023</strong> Copenhagen</p>
+                        <small><span>Disease:</span> Rheumatoid arthiritis <a href="#">Visit Website</a></small>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+            </div>
+            <div class="row row-sm">
+              <div class="col-md-6 col-xl-4">
+                <div class="card ht-450">
+                  <div class="card-header pb-0 ps-0 px-3">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title pt-1">My hcp discovery channel</h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                  </div>
+                  <p class="tx-12 tx-gray-500 mb-3 px-3">Recommended experts in my territory.</p>
+                  <div class="ht-350 w-100"  id="ps-17">
+                    <div class="p-3 border-bottom">
+                      <div class="media mt-0">
+                        <div class="d-flex me-3">
+                          <a   href="javascript:void(0);">
+                            <img class="media-object avatar brround w-7 h-7" alt="64x64" src="assets/img/faces/5.jpg">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div class="d-flex">
+                            <h6 class="mt-0 mb-0 font-weight-semibold ">Dr. Joanne Scott</h6>
+                            <span class="tx-12 ms-auto">
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                            </span>
+                          </div>
+                          <div class="d-flex">
+                            <p class="tx-12 text-muted mb-0">Digital Savvy</p>
+                            <small class="ms-auto text-end">Viquia rating</small>
+                          </div>
+    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3 border-bottom">
+                      <div class="media mt-0">
+                        <div class="d-flex me-3">
+                          <a   href="javascript:void(0);">
+                            <img class="media-object avatar brround w-7 h-7" alt="64x64" src="assets/img/faces/9.jpg">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div class="d-flex">
+                            <h6 class="mt-0 mb-0 font-weight-semibold ">Prof Cristobal Sharp</h6>
+                            <span class="tx-12 ms-auto">
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                            </span>
+                          </div>
+                          <div class="d-flex">
+                            <p class="tx-12 text-muted mb-0">Digital Savvy</p>
+                            <small class="ms-auto text-end">Viquia rating</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3 border-bottom">
+                      <div class="media mt-0">
+                        <div class="d-flex me-3">
+                          <a   href="javascript:void(0);">
+                            <img class="media-object avatar brround w-7 h-7" alt="64x64" src="assets/img/faces/4.jpg">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div class="d-flex">
+                            <h6 class="mt-0 mb-0 font-weight-semibold ">Dr Velma Wellons </h6>
+                            <span class="tx-12 ms-auto">
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                            </span>
+                          </div>
+                          <div class="d-flex">
+                            <p class="tx-12 text-muted mb-0">Last visit: 4 days ago</p>
+                            <small class="ms-auto text-end">Viquia rating</small>
+                          </div>
+    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3 border-bottom">
+                      <div class="media mt-0">
+                        <div class="d-flex me-3">
+                          <a   href="javascript:void(0);">
+                            <img class="media-object avatar brround w-7 h-7" alt="64x64" src="assets/img/faces/7.jpg">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div class="d-flex">
+                            <h6 class="mt-0 mb-0 font-weight-semibold ">Dr. Cathie Madonna </h6>
+                            <span class="tx-12 ms-auto">
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                            </span>
+                          </div>
+                          <div class="d-flex">
+                            <p class="tx-12 text-muted mb-0">Last visit: 2 days ago</p>
+                            <small class="ms-auto text-end">Viquia rating</small>
+                          </div>
+    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3 border-bottom">
+                      <div class="media mt-0">
+                        <div class="d-flex me-3">
+                          <a   href="javascript:void(0);">
+                            <img class="media-object avatar brround w-7 h-7" alt="64x64" src="assets/img/faces/12.jpg">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div class="d-flex">
+                            <h6 class="mt-0 mb-0 font-weight-semibold ">Dr. Aurelio Dahmer </h6>
+                            <span class="tx-12 ms-auto">
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                            </span>
+                          </div>
+                          <div class="d-flex">
+                            <p class="tx-12 text-muted mb-0">Last visit: 20 minutes ago</p>
+                            <small class="ms-auto text-end">Viquia rating</small>
+                          </div>
+    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3 border-bottom">
+                      <div class="media mt-0">
+                        <div class="d-flex me-3">
+                          <a   href="javascript:void(0);">
+                            <img class="media-object avatar brround w-7 h-7" alt="64x64" src="assets/img/faces/12.jpg">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div class="d-flex">
+                            <h6 class="mt-0 mb-0 font-weight-semibold ">Dr. Aurelio Dahmer </h6>
+                            <span class="tx-12 ms-auto">
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                            </span>
+                          </div>
+                          <div class="d-flex">
+                            <p class="tx-12 text-muted mb-0">Last visit: 20 minutes ago</p>
+                            <small class="ms-auto text-end">Viquia rating</small>
+                          </div>
+    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="card ht-450">
+                  <div class="card-body pe-0">
+                      <div class="d-flex justify-content-between">
+                      <h4 class="card-title mg-b-10">My scientific influencers</h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                  </div>
+                  <p class="tx-12 tx-gray-500 mb-3">Scientific influencer HCPs in my territory.</p>
+                  <div class="chips ht-350 pe-4" id="ps-18">
+                      <div class="team">
+                        <a href="javascript:void(0)" class="chip">
+                          <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                          Dr. Joanne Scot
+                        </a>
+                        <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                        <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+                        <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                        <p>Scientific influencer</p>
+                      </div>
+                      <div class="team">
+                          <a href="javascript:void(0)" class="chip">
+                            <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                            Dr. Cristobal Sharp
+                          </a>
+                          <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                          <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+                          <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                          <p>Scientific influencer</p>
+                      </div>
+                      <div class="team">
+                      <a href="javascript:void(0)" class="chip">
+                          <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                          Prof Cathie Madonna
+                      </a>
+                      <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                      <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+                      <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                      <p>Scientific influencer</p>
+                      </div>
+                      <div class="team">
+                      <a href="javascript:void(0)" class="chip">
+                          <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                          Dr. Velma Wellons
+                      </a>
+                      <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                      <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+                      <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                      <p>Scientific influencer</p>
+                      </div>
+                      <div class="team">
+                      <a href="javascript:void(0)" class="chip">
+                          <span class="avatar cover-image" data-bs-image-src="assets/img/faces/2.jpg"></span>
+                          Dr. Joanne Scot
+                      </a>
+                      <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                      <i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+                      <i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+                      <p>Scientific influencer</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-12 col-xl-4">
+                <div class="card ht-450">
+                  <div class="card-body pe-0">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mg-b-10">Next Best Action</h4>
+                      <i class="mdi mdi-dots-Vertical"></i>
+                    </div>
+                    <p class="tx-12 tx-gray-500 mb-3 pe-3">
+                      Conferences and congresses where you can meet one of the recommended HCPs with high probability.
+                    </p>
+                    <div>
+                      <div class="chips ht-325 pe-3"  id="ps-19">
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Dr. Tom Watson
+                            </a>
+                            <p>Date: 20 Jun 2023<br/>Event: Name of the Conference</p>                            
+                          </div>
+                          <button class="action_button">
+                            Register to event
+                          </button>
+                        </div>
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Prof. Dr. Peter Clark
+                            </a>
+                            <p>Date: 20 Jun 2023<br/>Event: Name of the Conference</p>   
+                          </div>
+                          <button class="action_button">
+                            Register to event
+                          </button>
+                        </div>
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Dr. Mary Preston
+                            </a>
+                            <p>Date: 20 Jun 2023<br/>Event: Name of the Conference</p>   
+                          </div>
+                          <button class="action_button">
+                            Register to event
+                          </button>
+                        </div>
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Dr. Steve Martin
+                            </a>
+                            <p>Date: 20 Jun 2023<br/>Event: Name of the Conference</p>   
+                          </div>
+                          <button class="action_button">
+                            Register to event
+                          </button>
+                        </div>
+                        <div
+                          class="team d-flex flex-column flex-md-row align-items-start justify-content-between pb-3 pb-lg-0"
+                        >
+                          <div>
+                            <a href="javascript:void(0)" class="chip">
+                              <span
+                                class="avatar cover-image"
+                                data-bs-image-src="assets/img/faces/2.jpg"
+                              ></span>
+                              Dr. Steve Martin
+                            </a>
+                            <p>Date: 20 Jun 2023<br/>Event: Name of the Conference</p>   
+                          </div>
+                          <button class="action_button">
+                            Register to event
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Back-to-top --->
+    <a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
+
+    <!--- JQuery min js --->
+    <script src="js/jquery.min.js"></script>
+
+    <!--- JQuery scrollbar --->
+    <script src="js/scrollBar.js"></script>
+
+    <!--- Bootstrap Bundle js --->
+    <script src="js/popper.min.js"></script>
+
+    <!--- Ionicons js --->
+    <script src="js/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+
+    <!--- Sparkline js --->
+    <script src="js/jquery.sparkline.min.js"></script>
+
+    <!--- Perfect-scrollbar js --->
+    <script src="js/perfect-scrollbar.min.js"></script>
+    <script src="js/p-scroll.js"></script>
+
+    <!--- Internal Chart js --->
+    <script src="js/Chart.bundle.min.js"></script>
+
+    <!--- Flot js --->
+    <script src="js/jquery.flot.js"></script>
+    <script src="js/jquery.flot.pie.js"></script>
+    <script src="js/jquery.flot.resize.js"></script>
+
+    <!--- Internal Chart flot js --->
+    <script src="js/chart.flot.js"></script>
+
+    <!--- sticky js --->
+    <script src="js/sticky.js"></script>
+
+    <!--- Scripts js --->
+    <script src="js/script.js"></script>
+
+    <!--- Index js --->
+    <script src="js/index.js"></script>
+
+    <!--themecolor js-->
+    <script src="js/themecolor.js"></script>
+
+    <script src="q.js"></script>
+    <script src="MyInsightsLibrary.js"></script>
+
+    <!--- Custom js --->
+    <script src="js/custom.js"></script>
+
+    <script>
+      const ps12 = new PerfectScrollbar('#ps-12',{
+        suppressScrollX: true,
+      });
+      const ps13 = new PerfectScrollbar('#ps-13',{
+        suppressScrollX: true,
+      });
+      const ps14 = new PerfectScrollbar('#ps-14',{
+        suppressScrollX: true,
+      });
+      const ps15 = new PerfectScrollbar('#ps-15',{
+        suppressScrollX: true,
+      });
+      const ps16 = new PerfectScrollbar('#ps-16',{
+        suppressScrollX: true,
+      });
+      const ps17 = new PerfectScrollbar('#ps-17',{
+        suppressScrollX: true,
+      });
+      const ps18 = new PerfectScrollbar('#ps-18',{
+        suppressScrollX: true,
+      });
+      const ps19 = new PerfectScrollbar('#ps-19',{
+        suppressScrollX: true,
+      });
+      
+    </script>
+  </body>
+</html>

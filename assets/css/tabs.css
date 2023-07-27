@@ -1,0 +1,112 @@
+/* .broadcasting-tabs ul{
+	display: flex;
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+
+.broadcasting-tabs ul li{
+	padding: 15px;
+    padding-bottom: 10px;
+	border-bottom: 1px solid rgba(255,255,255, .5);
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+}
+
+.broadcasting-tabs ul li{	
+	cursor: pointer;
+	padding-bottom: 0px;
+}
+.broadcasting-tabs ul li{	
+	
+	text-align: left;
+	
+}
+
+
+.broadcasting-tabs ul li:last-child{
+	border-right: 0px;
+}
+
+
+.broadcasting-tabs ul li:before{
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	opacity: 0;
+	transition: all 0.2s ease;
+}
+
+.broadcasting-tabs ul li:hover{
+    background: transparent;
+	color: white;
+	opacity: 1;
+}
+
+.broadcasting-tabs ul li{
+	color: black;
+	letter-spacing: .05px;
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+}
+.broadcasting-tabs ul li.active{
+	color: blue !important;
+	letter-spacing: .05px;
+	opacity: 1;
+	font-weight: bold;
+}
+.broadcasting-tabs ul li:hover:before,
+.broadcasting-tabs ul li.active:before{
+	opacity: 1;
+}
+
+.content{	
+	padding: 0px;
+	transition: all 0.2s ease-in-out;
+}
+ */
+
+
+
+.button-area-line {
+ 
+padding: 5px 0px;
+padding-bottom: 10px;
+  display: flex;  
+  flex-direction: row;  
+  flex-wrap: wrap; 
+  max-width: 97%;
+  cursor: pointer;
+  
+}
+.broadcasting-tabs .active{
+	color: #3858f9 !important;
+	letter-spacing: .05px;
+	opacity: 1;
+    letter-spacing: -0.1px
+	/* font-weight: bold; */
+}
+.button-area-line div {
+    /* background: #999; */
+     /* padding: 1em; */
+     font-size: .9em;
+     margin: .5em 0em;
+     color: white;
+     text-decoration: none;
+     flex-grow: 1;
+     text-align: left; 
+     white-space:nowrap
+     
+   }
+
+   .content{	
+	padding: 0px;
+	transition: all 0.2s ease-in-out;
+}
